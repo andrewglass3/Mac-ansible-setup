@@ -68,31 +68,18 @@ homebrew_installed_packages:
   - autoconf
   - awscli
   - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - github/gh/gh
   - go
   - gpg
-  - httpie
   - iperf
   - kubectx
-  - libevent
-  - sqlite
-  - mcrypt
+  - MonitorControl
   - nmap
-  - node
-  - nvm
-  # - oh-my-posh
-  - php
   - ssh-copy-id
-  - cowsay
   - readline
   - openssl
-  - pv
   - wget
-  - wrk
   - zsh-history-substring-search
   - zsh
   - zsh-autosuggestions
@@ -107,11 +94,8 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
   - docker
-#  - dropbox
-#  - firefox
+  - firefox
   - google-chrome
-#  - handbrake
-#  - licecap
   - iterm2
   - sequel-ace
   - slack
@@ -125,6 +109,7 @@ homebrew_cask_apps:
   - notion
   - font-meslo-for-powerline
   - fig
+  - rectangle
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -174,6 +159,7 @@ sublime_package_control:
   - "SublimeLinter-contrib-yamllint"
   - "TrailingSpaces"
   - "WordCount"
+  - "LSP-terraform"
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
