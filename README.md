@@ -96,7 +96,6 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 Applications (installed with Homebrew Cask):
 
   - [ChromeDriver](https://sites.google.com/chromium.org/driver/)
-  - [Docker](https://www.docker.com/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [Google Chrome](https://www.google.com/chrome/)
   - [Homebrew](http://brew.sh/)
@@ -107,31 +106,24 @@ Applications (installed with Homebrew Cask):
 Packages (installed with Homebrew):
 
   - autoconf
+  - awscli
   - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - github/gh/gh
   - go
   - gpg
-  - httpie
   - iperf
-  - libevent
-  - sqlite
-  - mcrypt
+  - kubectx
+  - MonitorControl
   - nmap
-  - node
-  - nvm
-  - php
   - ssh-copy-id
-  - cowsay
   - readline
   - openssl
-  - pv
   - wget
-  - wrk
   - zsh-history-substring-search
+  - zsh
+  - zsh-autosuggestions
+  - zsh-completions
 
 My [dotfiles](https://github.com/andrewglass3/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
