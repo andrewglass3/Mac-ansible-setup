@@ -102,6 +102,16 @@ Applications (installed with Homebrew Cask):
   - [Slack](https://slack.com/)
   - [Sublime Text](https://www.sublimetext.com/)
   - [Transmit](https://panic.com/transmit/) (S/FTP client)
+  - [iterm2] (https://iterm2.com) (Replacement Terminal)
+  - [1Password] (https://1password.com) (Password Manager)
+  - [Visual Studio Code] (https://code.visualstudio.com)
+  - [Viscosity](https://www.sparklabs.com/viscosity/)
+  - [Notion](https://www.notion.so)
+  - [Fig](https://fig.io) (Intelligent terminal prompt assistant)
+  - [Rectangle](https://rectangleapp.com) (Window snapping and management app)
+  - [font-hack-nerd-font](https://www.nerdfonts.com) (Font for terminal)
+  - [font-fira-code-nerd-font](https://www.nerdfonts.com) (Font for terminal)
+  - [font-meslo-for-powerline](https://www.nerdfonts.com) (Font for terminal)
 
 Packages (installed with Homebrew):
 
@@ -124,6 +134,25 @@ Packages (installed with Homebrew):
   - zsh
   - zsh-autosuggestions
   - zsh-completions
+
+  - chromedriver
+  - docker
+  - firefox
+  - google-chrome
+  - iterm2
+  - sequel-ace
+  - slack
+  - sublime-text
+  - transmit
+  - 1password
+  - visual-studio-code
+  - font-hack-nerd-font
+  - font-fira-code-nerd-font
+  - viscosity
+  - notion
+  - font-meslo-for-powerline
+  - fig
+  - rectangle
 
 My [dotfiles](https://github.com/andrewglass3/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
