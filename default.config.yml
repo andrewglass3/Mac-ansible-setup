@@ -3,7 +3,7 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
 configure_terminal: true
-configure_osx: false
+configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
@@ -56,26 +56,33 @@ sudoers_custom_config: ''
 
 dotfiles_repo: https://github.com/andrewglass3/dotfiles.git
 dotfiles_repo_accept_hostkey: true
+become: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
   - .inputrc
-  - .vimrc
+  - .osx
+    #  - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - awscli
+  - ack
   - bash-completion
+  - curl
+  - netcat
   - git
   - github/gh/gh
   - go
   - gpg
   - iperf
+  - kubectl
   - kubectx
-  - MonitorControl
   - nmap
+  - npm
+  - powerlevel10k
   - ssh-copy-id
   - readline
   - openssl
@@ -97,6 +104,7 @@ homebrew_cask_apps:
   - firefox
   - google-chrome
   - iterm2
+  - kubecontext
   - sequel-ace
   - slack
   - sublime-text
@@ -110,13 +118,16 @@ homebrew_cask_apps:
   - font-meslo-for-powerline
   - fig
   - rectangle
+  - spotify
+  - tidal
+  - microsoft-teams
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
-  - { id: 967805235, name: "Paste" }
-  - { id: 1451685025, name: "Wireguard" }
-  - { id: 409203825, name: "Numbers" }
-  - { id: 1153157709, name: "Speedtest by Ookla" }
+  # - { id: 1503446680, name: "PastePal" }
+  # - { id: 1451685025, name: "WireGuard" }
+  # - { id: 409203825, name: "Numbers" }
+#  - { id: 1153157709, name: "Speedtest by Ookla" }
 mas_email: ""
 mas_password: ""
 
@@ -134,8 +145,8 @@ gem_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
 npm_packages: []
-# - name: webpack
-#   state: present # present/absent/latest, default: present
+# - name: ibm/plex
+# state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
 pip_packages: []
 # - name: mkdocs
