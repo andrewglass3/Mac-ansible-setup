@@ -56,14 +56,14 @@ sudoers_custom_config: ''
 
 dotfiles_repo: https://github.com/andrewglass3/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-become: true
+become: True
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
   - .inputrc
   - .osx
-    #  - .vimrc
+  - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -124,7 +124,7 @@ homebrew_cask_apps:
   - surfshark
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps:
+mas_installed_apps: []
   # - { id: 1503446680, name: "PastePal" }
   # - { id: 1451685025, name: "WireGuard" }
   # - { id: 409203825, name: "Numbers" }

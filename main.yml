@@ -35,6 +35,11 @@
       when: configure_terminal
       tags: ['terminal']
 
+    - name: Ensure /Users/andrew/.osx is executable
+      ansible.builtin.file:
+        path: /Users/andrew/.osx
+        mode: 'u+x'
+
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']
