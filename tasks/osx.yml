@@ -3,5 +3,10 @@
 - name: Run .osx dotfiles.
   command: "{{ osx_script }}"
   changed_when: True
-  become: yes
+  become: true
+  become_user: andrew
+
+- name: Install Rosetta 2
+  command: softwareupdate --install-rosetta --agree-to-license
+  become: true
   become_user: andrew

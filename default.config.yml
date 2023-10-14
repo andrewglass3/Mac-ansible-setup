@@ -22,30 +22,33 @@ dockitems_persist:
  - name: "Music"
    path: "/System/Applications/Music.app"
    pos: 2
+ - name: "Chrome"
+   path: "/Applications/Google\ Chrome.app"
+   pos: 3
  - name: "Mail"
    path: "/System/Applications/Mail.app/"
-   pos: 3
+   pos: 4
  - name: "Visual Studio Code"
    path: "/Applications/Visual Studio Code.app/"
-   pos: 4
+   pos: 5
  - name: "Sublime Text"
    path: "/Applications/Sublime Text.app/"
-   pos: 5
- - name: "Safari"
-   path: "/System/Applications/Safari.app/"
    pos: 6
  - name: "Slack"
    path: "/Applications/Slack.app/"
    pos: 7
+ - name: "Messages"
+   path: "/System/Applications/Messages.app"
+   pos: 8
  - name: "Calendar"
    path: "/System/Applications/Calendar.app"
-   pos: 8
+   pos: 9
  - name: "1Password"
    path: "/Applications/1Password.app/"
-   pos: 9
+   pos: 10
  - name: "iTerm"
    path: "/Applications/iTerm.app/"
-   pos: 10
+   pos: 11
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -72,29 +75,30 @@ homebrew_installed_packages:
   - ack
   - bash-completion
   - curl
-  - netcat
+  - checkov
   - git
-  - github/gh/gh
+  - gh
   - go
   - gpg
   - iperf
+  - jinja2-cli
+  - jq
   - kubectl
   - kubectx
+  - netcat
   - nmap
   - npm
-  - powerlevel10k
-  - ssh-copy-id
-  - readline
   - openssl
+  - powerlevel10k
+  - readline
+  - ssh-copy-id
   - wget
   - zsh-history-substring-search
   - zsh
-  - zsh-autosuggestions
-  - zsh-completions
+  # - zsh-autosuggestions
+  # - zsh-completions
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
   - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
@@ -102,9 +106,13 @@ homebrew_cask_apps:
   - chromedriver
   - docker
   - firefox
+  - fig
   - google-chrome
   - iterm2
   - kubecontext
+  - microsoft-auto-update
+  - microsoft-office
+  - monitorcontrol
   - sequel-ace
   - slack
   - sublime-text
@@ -119,16 +127,15 @@ homebrew_cask_apps:
   - fig
   - rectangle
   - spotify
-  - tidal
   - microsoft-teams
   - surfshark
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-  # - { id: 1503446680, name: "PastePal" }
-  # - { id: 1451685025, name: "WireGuard" }
-  # - { id: 409203825, name: "Numbers" }
-#  - { id: 1153157709, name: "Speedtest by Ookla" }
+mas_installed_apps:
+  - { id: 1503446680, name: "PastePal" }
+  - { id: 1451685025, name: "WireGuard" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 1153157709, name: "Speedtest by Ookla" }
 mas_email: ""
 mas_password: ""
 
@@ -155,7 +162,7 @@ pip_packages: []
 #   version: "0.16.3" # default: N/A
 
 # Set to 'true' to configure Sublime Text.
-configure_sublime: false
+configure_sublime: true
 sublime_base_path: '~/Library/Application Support/Sublime Text'
 sublime_config_path: "Packages/User"
 sublime_package_control:
