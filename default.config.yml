@@ -60,6 +60,7 @@ sudoers_custom_config: ''
 dotfiles_repo: https://github.com/andrewglass3/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 become: True
+changed_when: False
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .zshrc
@@ -85,6 +86,7 @@ homebrew_installed_packages:
   - jq
   - kubectl
   - kubectx
+  - neofetch
   - netcat
   - nmap
   - npm
@@ -103,32 +105,34 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
   - chromedriver
   - docker
-  - firefox
+  - discord
   - fig
+  - firefox
+  - font-fira-code-nerd-font
+  - font-hack-nerd-font
+  - font-meslo-for-powerline
   - google-chrome
   - iterm2
   - kubecontext
   - microsoft-auto-update
   - microsoft-office
+  - microsoft-teams
   - monitorcontrol
+  - notion
+  - podman-desktop
+  - rectangle
+  - spotify
   - sequel-ace
   - slack
   - sublime-text
   - transmit
-  - 1password
   - visual-studio-code
-  - font-hack-nerd-font
-  - font-fira-code-nerd-font
   - viscosity
-  - notion
-  - font-meslo-for-powerline
-  - fig
-  - rectangle
-  - spotify
-  - microsoft-teams
   - surfshark
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
