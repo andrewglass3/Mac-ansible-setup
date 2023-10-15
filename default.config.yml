@@ -16,39 +16,39 @@ dockitems_remove:
  - Reminders
 
 dockitems_persist:
- - name: "Launchpad"
-   path: "/System/Applications/Launchpad.app"
-   pos: 1
- - name: "Music"
-   path: "/System/Applications/Music.app"
-   pos: 2
- - name: "Chrome"
-   path: "/Applications/Google\ Chrome.app"
-   pos: 3
- - name: "Mail"
-   path: "/System/Applications/Mail.app/"
-   pos: 4
- - name: "Visual Studio Code"
-   path: "/Applications/Visual Studio Code.app/"
-   pos: 5
- - name: "Sublime Text"
-   path: "/Applications/Sublime Text.app/"
-   pos: 6
- - name: "Slack"
-   path: "/Applications/Slack.app/"
-   pos: 7
- - name: "Messages"
-   path: "/System/Applications/Messages.app"
-   pos: 8
- - name: "Calendar"
-   path: "/System/Applications/Calendar.app"
-   pos: 9
- - name: "1Password"
-   path: "/Applications/1Password.app/"
-   pos: 10
- - name: "iTerm"
-   path: "/Applications/iTerm.app/"
-   pos: 11
+  - name: "Launchpad"
+    path: "/System/Applications/Launchpad.app"
+    pos: 1
+  - name: "Music"
+    path: "/System/Applications/Music.app"
+    pos: 2
+  - name: "Chrome"
+    path: "/Applications/Google\ Chrome.app"
+    pos: 3
+  - name: "Mail"
+    path: "/System/Applications/Mail.app/"
+    pos: 4
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 5
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app/"
+    pos: 6
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
+    pos: 7
+  - name: "Messages"
+    path: "/System/Applications/Messages.app"
+    pos: 8
+  - name: "Calendar"
+    path: "/System/Applications/Calendar.app"
+    pos: 9
+  - name: "1Password"
+    path: "/Applications/1Password.app/"
+    pos: 10
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    pos: 11
 
 configure_sudoers: false
 sudoers_custom_config: ''
