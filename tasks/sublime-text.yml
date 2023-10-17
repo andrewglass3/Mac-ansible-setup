@@ -22,8 +22,11 @@
     src: "files/sublime/{{ item }}"
     dest: "{{ sublime_base_path }}/{{ sublime_config_path }}/{{ item }}"
   loop:
-    - "Cobalt (SL).tmTheme"
+   # - "Cobalt (SL).tmTheme"
     - "Markdown.sublime-settings"
     - "Plain text.sublime-settings"
     - "Preferences.sublime-settings"
     - "WordCount.sublime-settings"
+    - "Terminus.sublime-settings"
+    - "Mariana.sublime-color-scheme"
+    - "DefaultDark.sublime-theme"

@@ -8,12 +8,12 @@ configure_osx: true
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
 dockitems_remove:
-  - TV
-  - Podcasts
-  - 'App Store'
-  - News
-  - Contacts
-  - Reminders
+ - TV
+ - Podcasts
+ - 'App Store'
+ - News
+ - Contacts
+ - Reminders
 
 dockitems_persist:
   - name: "Launchpad"
@@ -22,31 +22,33 @@ dockitems_persist:
   - name: "Music"
     path: "/System/Applications/Music.app"
     pos: 2
+  - name: "Chrome"
+    path: "/Applications/Google\ Chrome.app"
+    pos: 3
   - name: "Mail"
     path: "/System/Applications/Mail.app/"
-    pos: 3
+    pos: 4
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
-    pos: 4
+    pos: 5
   - name: "Sublime Text"
     path: "/Applications/Sublime Text.app/"
-    pos: 5
-  - name: "Chrome"
-    path: "/Applications/Google Chrome.app/"
     pos: 6
   - name: "Slack"
     path: "/Applications/Slack.app/"
     pos: 7
+  - name: "Messages"
+    path: "/System/Applications/Messages.app"
+    pos: 8
   - name: "Calendar"
     path: "/System/Applications/Calendar.app"
-    pos: 8
+    pos: 9
   - name: "1Password"
     path: "/Applications/1Password.app/"
-    pos: 9
+    pos: 10
   - name: "iTerm"
     path: "/Applications/iTerm.app/"
-    pos: 10
-
+    pos: 11
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -81,8 +83,6 @@ homebrew_installed_packages:
   - gpg
   - iperf
   - jinja2-cli
-  - kubectl
-  - kubectx
   - jq
   - kubectl
   - kubectx
@@ -101,8 +101,6 @@ homebrew_installed_packages:
   # - zsh-completions
 
 homebrew_taps:
-#  - homebrew/core
-#  - homebrew/cask
   - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
@@ -121,7 +119,6 @@ homebrew_cask_apps:
   - kubecontext
   - microsoft-auto-update
   - microsoft-office
-  - monitorcontrol
   - microsoft-teams
   - monitorcontrol
   - notion
@@ -134,14 +131,6 @@ homebrew_cask_apps:
   - transmit
   - visual-studio-code
   - viscosity
-  - notion
-  - font-meslo-for-powerline
-  - fig
-  - rectangle
-  - spotify
-  - microsoft-teams
-  - surfshark
-  - teamviewer
   - surfshark
   - whatsapp
 
@@ -187,13 +176,13 @@ sublime_package_control:
   - "GitHub Flavored Markdown Preview"
   - "Jinja2"
   - "Package Control"
+  - "PHP-Twig"
   - "Pretty JSON"
   - "SublimeLinter"
   - "SublimeLinter-contrib-yamllint"
   - "TrailingSpaces"
   - "WordCount"
   - "LSP-terraform"
-  - "Terminus"
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

@@ -1,6 +1,5 @@
 {
-  "added_words":
-  [
+  "added_words": [
     "Kubernetes",
     "Ansible",
     "Mesos",
@@ -282,8 +281,7 @@
   "auto_complete_delay": 200,
   "auto_indent": true,
   "auto_match_enabled": true,
-  "binary_file_patterns":
-  [
+  "binary_file_patterns": [
     "generated/*",
     "*.tbz2",
     "*.gzip",
@@ -302,15 +300,14 @@
     "*.zip"
   ],
   "close_windows_when_empty": true,
-  "color_scheme": "Packages/User/Cobalt (SL).tmTheme",
+  "color_scheme": "Mariana.sublime-color-scheme",
   "create_window_at_startup": false,
   "detect_indentation": true,
   "draw_minimap_border": false,
   "draw_white_space": "selection",
   "ensure_newline_at_eof_on_save": false,
   "fade_fold_buttons": true,
-  "file_exclude_patterns":
-  [
+  "file_exclude_patterns": [
     "*.pyc",
     "*.pyo",
     "*.exe",
@@ -333,8 +330,7 @@
     "*.sublime-workspace"
   ],
   "fold_buttons": true,
-  "folder_exclude_patterns":
-  [
+  "folder_exclude_patterns": [
     "node_modules",
     ".svn",
     ".git",
@@ -348,12 +344,8 @@
   "gpu_window_buffer": false,
   "gutter": true,
   "highlight_line": true,
-  "ignored_packages":
-  [
-    "Vintage",
-  ],
-  "ignored_words":
-  [
+  "ignored_packages": ["Vintage"],
+  "ignored_words": [
     "0000ff",
     "00f",
     "12m",
@@ -392,15 +384,12 @@
   "margin": 4,
   "match_brackets": true,
   "match_selection": true,
-  "rulers":
-  [
-    80
-  ],
+  "rulers": [80],
   "smart_indent": true,
   "spell_check": false,
   "tab_size": 2,
-  "theme": "auto",
+  "theme": "DefaultDark.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_automatic_white_space": false,
-  "trim_trailing_white_space_on_save": false,
+  "trim_trailing_white_space_on_save": false
 }
