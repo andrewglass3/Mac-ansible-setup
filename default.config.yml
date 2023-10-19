@@ -57,8 +57,8 @@ sudoers_custom_config: ''
 
 dotfiles_repo: https://github.com/andrewglass3/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-become: True
-changed_when: False
+become: true
+changed_when: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .zshrc
@@ -69,16 +69,20 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - ack
   - autoconf
   - awscli
   - ack
   - bash-completion
   - curl
   - checkov
+  - eksctl
   - git
   - gh
   - go
   - gpg
+  - helm
+  - htop
   - iperf
   - jinja2-cli
   - kubectl
@@ -119,6 +123,7 @@ homebrew_cask_apps:
   - google-chrome
   - iterm2
   - kubecontext
+  - leapp
   - microsoft-auto-update
   - microsoft-office
   - monitorcontrol
@@ -188,5 +193,6 @@ sublime_package_control:
   - "LSP-terraform"
   - "Terminus"
 
+configure_shell_packages: false
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

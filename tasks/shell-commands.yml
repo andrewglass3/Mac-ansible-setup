@@ -1,0 +1,22 @@
+# ---
+# vars:
+#   ZSH: "~/.oh-my-zsh"
+#   - name: Check if zsh-completions folder exists
+#     stat:
+#       path: "{{ ZSH_CUSTOM | default(ZSH + '/custom', true) | default('~/.oh-my-zsh/custom', true) }}/plugins/zsh-completions"
+#     register: folder_stat
+
+#   - name: Install ZSH Completions
+#     shell: git clone https://github.com/zsh-users/zsh-completions "{{ ZSH_CUSTOM | default(ZSH + '/custom', true) | default('~/.oh-my-zsh/custom', true) }}/plugins/zsh-completions"
+#     when: not folder_stat.stat.exists
+#     changed_when: false
+#     check_mode: false
+# # # Clone zsh completions as brew install not working #
+# # - name: Install ZSH Completions.
+# #   shell: git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+# #   changed_when: false
+# #   check_mode: false
+# # - name: Install ZSH Auto Suggestions.
+# #   shell: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# #   changed_when: false
+# #   check_mode: false

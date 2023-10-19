@@ -37,7 +37,7 @@
 
     - name: Ensure /Users/andrew/.osx is executable
       ansible.builtin.file:
-        path: /Users/andrewglass/.osx
+        path: /Users/andrew/.osx
         mode: "u+x"
 
     - import_tasks: tasks/osx.yml
@@ -50,6 +50,10 @@
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ["sublime-text"]
+
+    - import_tasks: tasks/shell-commands.yml
+      when: configure_shell_packages
+      tags: ["shell-commands"]
 
     - name: Run post-provision task files in a block.
       tags: ["post"]
