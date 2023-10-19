@@ -16,6 +16,9 @@ This repo/playbook is forked from Jeff Geerling https://github.com/geerlingguy/m
    3. Install Ansible: `pip3 install ansible`
 
 3. Clone or download this repository to your local drive.
+4. Change your username in the following files to match your mac username:
+    main.yml - lines 38, 40
+    tasks/osx.yml - lines 7 and 11. ** NOTE ** If you are running an intel mac - comment out lines 8 to 11 as rosetta is only for Apple Silicone Macs
 4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
 5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
 
