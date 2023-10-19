@@ -190,6 +190,7 @@ sublime_package_control:
   - "SublimeLinter-contrib-yamllint"
   - "TrailingSpaces"
   - "WordCount"
+  - "LSP"
   - "LSP-terraform"
   - "Terminus"
 
